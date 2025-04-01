@@ -7,15 +7,12 @@ export interface Project {
   fundingGoal: BigNumber;
   currentFunding: BigNumber;
   deadline: BigNumber;
-  imageUrl: string;
-  category: string;
   creator: string;
-  isFunded: boolean;
-  isExpired: boolean;
+  completed: boolean;
+  exists: boolean;
 }
 
 export interface Backer {
-  address: string;
   amount: BigNumber;
-  timestamp: BigNumber;
+  hasBacked: boolean;
 } 
